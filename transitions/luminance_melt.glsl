@@ -1,12 +1,12 @@
 // Author: 0gust1
 // License: MIT
-//My own first transition — based on crosshatch code (from pthrasher), using  simplex noise formula (copied and pasted)
-//-> cooler with high contrasted images (isolated dark subject on light background f.e.)
-//TODO : try to rebase it on DoomTransition (from zeh)?
-//optimizations :
-//luminance (see http://stackoverflow.com/questions/596216/formula-to-determine-brightness-of-rgb-color#answer-596241)
+// My own first transition — based on crosshatch code (from pthrasher), using  simplex noise formula
+// -> cooler with high contrasted images (isolated dark subject on light background f.e.)
+// TODO(?) : try to rebase it on DoomTransition (from zeh)
+// optimizations :
+// luminance (see http://stackoverflow.com/questions/596216/formula-to-determine-brightness-of-rgb-color#answer-596241)
 // Y = (R+R+B+G+G+G)/6
-//or Y = (R+R+R+B+G+G+G+G)>>3 
+// or Y = (R+R+R+B+G+G+G+G)>>3 
 
 
 //direction of movement :  0 : up, 1, down
@@ -25,7 +25,7 @@ float rand(vec2 co){
 
 // Simplex noise :
 // Description : Array and textureless GLSL 2D simplex noise function.
-//      Author : Ian McEwan, Ashima Arts.
+//      Authors : Ian McEwan, Ashima Arts.
 //  Maintainer : ijm
 //     Lastmod : 20110822 (ijm)
 //     License : MIT  
